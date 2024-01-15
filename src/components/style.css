@@ -1,0 +1,702 @@
+@font-face {
+    font-family: Roboto-Regular;
+    src: url(./fonts/Roboto-Regular.ttf);
+}
+
+@font-face {
+    font-family: Roboto-Medium;
+    src: url(./fonts/Roboto-Medium.ttf);
+}
+
+@font-face {
+    font-family: Roboto-BlackItalic;
+    src: url(./fonts/Roboto-BlackItalic.ttf);
+}
+
+@font-face {
+    font-family: IBMPlexSansKR-Medium;
+    src: url(./fonts/IBMPlexSansKR-Medium.ttf);
+}
+
+@font-face {
+    font-family: IBMPlexSansKR-Regular;
+    src: url(./fonts/IBMPlexSansKR-Regular.ttf);
+}
+
+@font-face {
+    font-family: NotoSansTC-Medium;
+    src: url(./fonts/NotoSansTC-Medium.ttf);
+}
+
+
+@font-face {
+    font-family: NotoSansTC-Regular;
+    src: url(./fonts/NotoSansTC-Regular.ttf);
+}
+
+
+
+
+html,
+body {
+    font-family: Roboto-Regular;
+}
+
+.inscription {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    min-height: 700px;
+    overflow: hidden;
+
+}
+
+@media only screen and (max-width: 1400px) {
+    .inscription {
+        min-height: 580px;
+    }
+
+}
+
+
+.inscription-tit {
+    font-size: 100px;
+    margin-top: 99px;
+    font-family: Roboto-BlackItalic;
+    text-shadow: 2px -3px 4px rgba(63, 76, 203, 1);
+}
+
+.inscription-txt {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+    font-family: Roboto-Medium;
+    position: absolute;
+    top: 14vw;
+}
+
+.inscription-txt img {
+    width: 30px;
+    height: 26px;
+}
+
+.logo-tit {
+    font-size: 40px;
+    font-family: Roboto-BlackItalic;
+}
+
+.inscription-txt div span {
+    color: #2ac9f9;
+}
+
+.navBox {
+    /* margin-top: 163px; */
+    gap: 0 !important;
+    /* margin-bottom: 106px; */
+    /* position: absolute;
+    top: 28vw; */
+    /* height: auto !important; */
+    position: relative;
+    top: 8vw;
+}
+
+.navItem {
+    width: 211px;
+    height: 61px !important;
+    /* background-image: linear-gradient(90deg,
+            #36bff1 0%,
+            #125bbd 100%); */
+    border-radius: 8px 0px 0px 8px !important;
+    display: flex;
+    justify-content: center;
+    font-family: Roboto-Medium !important;
+
+}
+
+.navItem:hover {
+    background-image: linear-gradient(90deg,
+            #2dfaf8 0%,
+            #3089ff 100%);
+}
+
+.navBox .navItem:nth-child(2) {
+    border-radius: 0px 8px 8px 0px !important;
+}
+
+
+/* main */
+.main-item-txt {
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+    font-family: Roboto-Medium !important;
+}
+
+.main-item-txt span {
+    font-size: 15px;
+    color: #51575f;
+    font-family: Roboto-Regular !important;
+}
+
+.main-item-txt p {
+    width: 9px;
+    height: 9px;
+    background-color: #ff3a5f;
+    border-radius: 10px;
+    margin-right: 11px;
+}
+
+.runBtn {
+    width: 241px;
+    height: 61px;
+    background-image: linear-gradient(90deg,
+            #36bff1 0%,
+            #125bbd 100%);
+    border-radius: 8px;
+    color: #fff;
+    font-size: 19px;
+    font-family: Roboto-Medium;
+    margin-top: 50px;
+}
+
+.runBtn:hover {
+    background-image: linear-gradient(90deg,
+            #2dfaf8 0%,
+            #3089ff 100%);
+}
+
+.clearBtn {
+    background: #14151b;
+    border-radius: 8px;
+    color: #fff;
+    font-family: Roboto-Medium;
+}
+
+.clearBtn:hover {
+    background-image: linear-gradient(90deg,
+            #36bff1 0%,
+            #125bbd 100%);
+}
+
+.log-main {
+    margin-bottom: 50px;
+    /* width: 1200px; */
+    height: 502px;
+    background-color: rgba(20, 21, 27, 0.9);
+    /* Adjust the alpha value as needed */
+    border-radius: 8px;
+    border: solid 1px #51575f;
+}
+
+body {
+    background: url(./img/bottom_background.webp) no-repeat 0 bottom;
+    background-size: 100% 50%;
+    background-color: #05030a !important;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    background: #05030a;
+    padding-top: 32px;
+    max-width: 1536px;
+    margin: 0 auto;
+    position: relative;
+    z-index: 9;
+}
+
+/* @media only screen and (min-width: 1701px) {
+    .header {
+        padding-left: 18vw;
+        padding-right: 18vw;
+    }
+}
+
+@media only screen and (max-width: 1700px) {
+    .header {
+        padding-left: 3vw !important;
+        padding-right: 3vw !important;
+    }
+} */
+
+.header-r {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.by-auto-inscription {
+    margin-bottom: 60px;
+    text-align: center;
+    font-family: Roboto-Regular;
+}
+
+.customize {
+    color: #2ac9f9;
+}
+
+
+.TextField .MuiInputBase-root {
+    height: 51px;
+    display: flex;
+    align-items: center;
+}
+
+.icons {
+    /* margin-right: 100px; */
+    display: flex;
+    align-items: center;
+}
+
+.icons .item {
+    /* margin-right: 100px; */
+    display: flex;
+    align-items: center;
+}
+
+
+.icons .item img {
+    width: 31px;
+    height: 31px;
+    margin-right: 28px;
+
+}
+
+.icons .item:nth-child(2) img {
+    width: 37px;
+    height: 37px;
+}
+
+.icons .item img:hover {
+    filter: invert(51%) sepia(77%) saturate(406%) hue-rotate(150deg) brightness(108%) contrast(98%);
+}
+
+
+.item-fir {
+    width: 250px;
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.lanContent {
+    width: 185px;
+
+    height: 70px;
+    background-color: #14151b;
+    border-radius: 8px;
+    border: solid 1px #51575f;
+    display: flex;
+    align-items: center;
+    padding-left: 21px;
+    margin-left: 13px;
+    position: relative;
+    cursor: pointer;
+}
+
+.lanContent:hover {
+    border: solid 1px #35bef0;
+}
+
+
+.iconDropdown {
+    width: 34px;
+    height: 20px;
+    transform: rotate(0deg);
+    position: absolute;
+    right: 20px;
+
+}
+
+.iconDropdown-r {
+    transform: rotate(0deg);
+    filter: invert(51%) sepia(77%) saturate(406%) hue-rotate(150deg) brightness(108%) contrast(98%);
+}
+
+/* #51575f */
+.lanIcon {
+    width: 24px;
+    height: 24px;
+}
+
+.language {
+    position: relative;
+    margin-left: 57px;
+}
+
+.lanContent .items {
+    position: absolute;
+    left: 0;
+    top: 110%;
+    width: 100%;
+    height: 310px;
+    background-color: #14151b;
+    border-radius: 8px;
+    border: solid 1px #35bef0;
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    padding: 8px 0;
+}
+
+.language .items div {
+    width: 100%;
+    height: 55px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    margin-top: 4px;
+    padding-left: 21px;
+    color: #51575f;
+
+}
+
+.language .items div:hover {
+    background-color: #282930;
+    color: #fff;
+}
+
+.lan-active {
+    color: #fff !important;
+    background-color: #35bef0;
+}
+
+.css-kc02vp-MuiPaper-root-MuiPopover-paper-MuiMenu-paper {
+    background: #14151b;
+}
+
+.css-12wi0s0-MuiButtonBase-root-MuiMenuItem-root {
+    color: #51575f;
+}
+
+.css-12wi0s0-MuiButtonBase-root-MuiMenuItem-root:hover {
+    background-color: #282930;
+    color: #fff;
+}
+
+.css-12wi0s0-MuiButtonBase-root-MuiMenuItem-root.Mui-selected {
+    background-color: #35bef0 !important;
+    color: #fff;
+}
+
+.css-ahj2mt-MuiTypography-root {
+    font-size: 18px;
+    font-family: Roboto-Medium !important;
+}
+
+.TextField-item {
+    background: #14151b !important;
+}
+
+.css-myb2s4-MuiInputBase-input-MuiOutlinedInput-input {
+    height: 51px;
+    box-sizing: border-box;
+
+}
+
+.logo {
+    height: 90px;
+    width: 90px;
+}
+
+.iframeBox {
+    height: 80vw;
+    width: 100%;
+    position: absolute;
+    overflow: hidden;
+    top: -6vw;
+}
+
+.codeIframe {
+    width: 100%;
+    height: 40vw;
+    position: absolute;
+}
+
+.open-main {
+    display: flex;
+    position: relative;
+    top: 3.5vh;
+    justify-content: center;
+}
+
+.open-main div {
+    color: #51575f;
+    font-family: IBMPlexSansKR-Regular;
+}
+
+.open-main div:not(:last-child) {
+    margin-right: 70px;
+}
+
+.open-main div a {
+    font-family: IBMPlexSansKR-Regular;
+    color: #fff;
+    margin-left: 19px;
+}
+
+@media only screen and (max-width: 1370px) {
+    .open-main {
+        flex-direction: column;
+    }
+
+    .navBox {
+        top: 14vw;
+    }
+}
+
+@media only screen and (max-width: 2150px) {
+    .open-main {
+        display: flex;
+        position: relative;
+        top: 4.5vh;
+        justify-content: center;
+    }
+}
+
+
+@media only screen and (max-width: 767px) {
+    .open-main {
+        flex-wrap: wrap;
+        flex-direction: row;
+    }
+
+    .open-main div {
+        color: #51575f;
+    }
+
+    .open-main div:not(:last-child) {
+        margin-right: 20px;
+    }
+
+    .open-main div a {
+        margin-left: 10px;
+        font-size: 14px;
+    }
+
+    .open-main2 div a {
+        margin-left: 0;
+    }
+
+    .open-main2 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .open-main2 p {
+        color: #51575f;
+        display: flex;
+        justify-content: center;
+        line-height: 0;
+    }
+
+    .codeIframe {
+        width: 100%;
+        height: 100vw;
+        position: absolute;
+        /* top: 50px; */
+    }
+
+    body {
+        background: url(./img/M_bottom_background.webp) no-repeat 0 bottom;
+        background-size: 100% 50%;
+        background-color: #05030a !important;
+    }
+
+    .header {
+        display: flex;
+        justify-content: space-between;
+        background: #05030a;
+        padding-top: 0px;
+        max-width: 100%;
+        margin: 0;
+        padding: 0 12px;
+    }
+
+    .logo {
+        height: 45px;
+        width: 45px;
+
+    }
+
+    .inscription {
+        padding-top: 30px;
+        min-height: 300px;
+        justify-content: start;
+    }
+
+    .inscription-tit {
+        font-size: 36px;
+        margin-top: 0px;
+        text-shadow: 1px 1px 2px rgba(63, 76, 203, 0.5);
+    }
+
+    .lanContent {
+        width: 175px;
+        height: 70px;
+        background-color: #14151b;
+        border-radius: 8px;
+        border: solid 1px #51575f;
+        display: none;
+        align-items: center;
+        padding-left: 21px;
+        margin-left: 13px;
+        position: relative;
+        cursor: pointer;
+    }
+
+    .item-fir {
+        width: auto;
+        display: flex;
+        align-items: center;
+        position: relative;
+    }
+
+    .language {
+        position: relative;
+        margin-left: 0px;
+    }
+
+    .logo-tit {
+        font-size: 20px;
+    }
+
+    .icons .item img {
+        max-width: 28px;
+        max-height: 28px;
+        margin-right: 20px;
+
+    }
+
+    .icons .item:nth-child(2) img {
+        max-width: 35px;
+        max-height: 35px;
+    }
+
+    .lanIcon {
+        width: 35px;
+        height: 35px;
+    }
+
+    .lanIcon:hover {
+        filter: invert(51%) sepia(77%) saturate(406%) hue-rotate(150deg) brightness(108%) contrast(98%);
+    }
+
+
+    .inscription-txt {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        font-size: 16px;
+        font-family: Roboto-Medium;
+        margin-top: 10px;
+        position: relative;
+        top: 0;
+    }
+
+    .inscription-txt img {
+        width: 30px;
+        height: 26px;
+    }
+
+    .navBox {
+        margin-top: 88px;
+        gap: 0 !important;
+        margin-bottom: 35px;
+        position: relative;
+        top: 0;
+    }
+
+    .navItem {
+        max-width: 160px;
+        height: 47px !important;
+        /* background-image: linear-gradient(90deg,
+                #36bff1 0%,
+                #125bbd 100%); */
+        border-radius: 8px 0px 0px 8px !important;
+        display: flex;
+        justify-content: center;
+        font-family: Roboto-Medium !important;
+        font-size: 18px;
+    }
+
+    .main-item-txt {
+        font-size: 18px;
+        display: flex;
+        align-items: center;
+        font-family: Roboto-Medium !important;
+        height: auto;
+    }
+
+    .main-item-txt-1 {
+        max-height: 20px;
+    }
+
+    .main-item-txt span {
+        font-size: 15px;
+        color: #51575f;
+        font-family: Roboto-Regular !important;
+        padding-left: 20px;
+        line-height: 1.2;
+    }
+
+    .m-lan-main {
+        position: fixed;
+        right: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        background: #05030a;
+        display: flex;
+        flex-direction: column;
+        padding-top: 97px;
+        z-index: 9;
+    }
+
+    .m-h-r {
+        position: fixed;
+        z-index: 99;
+    }
+
+    .m-lan-main div {
+        height: 60px;
+        padding-left: 42px;
+        display: flex;
+        align-items: center;
+        font-family: Roboto-Regular;
+        font-size: 15px;
+    }
+
+    .m-show-icon-r {
+        position: fixed;
+        right: 24px;
+        width: 38px;
+        height: 26px;
+        transform: rotate(90deg);
+    }
+
+    .runBtn {
+        margin-top: 20px;
+    }
+
+    .css-jzcd7z-MuiFormControlLabel-root {
+        margin-right: 20px;
+    }
+
+    .TextField-item {
+        margin-top: 10px;
+    }
+
+    .clearBtn {
+        margin-left: 12px;
+    }
+
+}
