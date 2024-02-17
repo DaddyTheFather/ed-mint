@@ -1,4 +1,4 @@
 [build]
+  base = "main"
   command = "npm run build && npm run export"
-  publish = "out"
-
+  publish = ".next"
