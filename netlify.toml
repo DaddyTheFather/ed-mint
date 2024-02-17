@@ -1,5 +1,5 @@
 [build]
-  command = "npm run build"
+  command = "npm run build && npm run export"
   publish = ".next" # Though typically, you'd publish the "out" directory or let Netlify's plugin handle it.
   
 # This plugin is automatically included for new Next.js projects on Netlify
