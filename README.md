@@ -1,0 +1,1 @@
+[![Netlify Status](https://api.netlify.com/api/v1/badges/0f42c47e-a15d-4fb3-84d3-d39bc562ad1c/deploy-status)](https://app.netlify.com/sites/ed-ordinal/deploys)
