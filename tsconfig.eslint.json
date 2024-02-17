@@ -1,0 +1,12 @@
+{
+    "extends": "./tsconfig.json",
+    "include": [
+      "next-env.d.ts",
+      "**/*.ts",
+      "**/*.tsx",
+      "prettier.config.js",
+      "postcss.config.js",
+      "next.config.js"
+    ]
+  }
+  
